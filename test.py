@@ -7,6 +7,7 @@ from openai import OpenAI
 import pandas as pd
 from sentence_transformers import SentenceTransformer, util
 
+############openAI GraphSQL#########
 
 data = pd.read_csv("amazon_products.csv")
 data['text'] = data['TITLE'] + data['BULLET_POINTS'] + data['DESCRIPTION']
